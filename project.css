@@ -1,34 +1,115 @@
- body{margin: 0;
- font-family: Arial, Helvetica, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-nav{
+
+/* Header */
+.header {
+    background-color: #6a1b9a;
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: black;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 15px 30px;
 }
-.logo{color: #fff;
-font-size: 1.5rem;
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
-.menu{
-    display: none;
-    flex-direction: column;
-    background-color: #444;
-    position: absolute;
-    top: 60px;
-    right: 20px;
+
+.header input {
+    width: 40%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.header button {
+    background-color: white;
+    color: #6a1b9a;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background-color: #f3e5f5;
+    text-align: center;
+    padding: 50px;
+}
+
+.banner h1 {
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+/* Categories */
+.categories {
+    padding: 30px;
+}
+
+.categories h2 {
+    margin-bottom: 15px;
+}
+
+.category-container {
+    display: flex;
+    gap: 15px;
+}
+
+.category {
+    background-color: #ede7f6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Products */
+.products {
+    padding: 30px;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
     width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.menu a{color: #fff;padding: 1rem;
-text-decoration: none;display: block;
+
+.product-card img {
+    width: 100%;
 }
-.hamburger{font-size: 2rem;color: #fff;cursor: pointer;
+
+.product-card button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
 }
-@media(min-width:768px){
-    .menu{display: flex;
-    flex-direction: row;position: static;background-color: none;width: auto;
-    }
-    .hamburger{display: none;
-    }
+
+/* Footer */
+.footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
